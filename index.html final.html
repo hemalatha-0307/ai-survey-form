@@ -1,0 +1,157 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>AI Tool Feedback Hub!</title>
+    <style>
+      body {
+        background-image: url('https://slidescorner.com/wp-content/uploads/2023/02/01-Abstract-Blue-3D-Cubes-Background-for-Tech-FREE-for-PPT-by-SlidesCorner.com_.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1{
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #description{
+        margin-top: 20px;
+        font-style: italic;
+        color: silver;
+        text-align: center;
+      }
+
+      #survey-form {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 60%;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      label, p {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        max-width: 500px; /* 👈 ADD THIS LINE to limit max width */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-top: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      input[type="submit"] {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">AI Tool Feedback Hub!</h1>
+    <p id="description">Help us discover how people use AI tools, what works best, and how they can be improved. Your feedback matters!</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+
+      <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email id" required></label>
+
+      <label id="number-label" for="number">Age: <input id="number" type="number" min="1" max="150" placeholder="Enter your age" style="width: 110px"></label>
+
+      <label for="role-dropdown">What best describes your current role?
+        <select id="role-dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Student</option>
+          <option value="2">Working Professional</option>
+          <option value="3">Freelancher</option>
+          <option value="4">Educator</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+
+      <label>
+        <p>How often do you use the AI tools?</p>
+        <input type="radio" name="frequency" value="daily" required> Daily<br>
+        <input type="radio" name="frequency" value="weekly"> Weekly<br>
+        <input type="radio" name="frequency" value="rarely"> Rarely<br>
+        <input type="radio" name="frequency" value="never"> Never<br>
+      </label>
+
+      <label for="dropdown">Choose your primary AI use case
+        <select id="dropdown">
+          <option value="01"> Content Creation </option>
+          <option value="02"> Coding & Development</option>
+          <option value="03"> Design & Image Generation</option>
+          <option value="04"> Data Analysis</option>
+          <option value="05"> Personal Assistant</option>
+        </select>
+      </label>
+
+      <label>
+        <p>Which AI tool do you use regularly?</p>
+        <input type="checkbox" value="chatgpt" required> Chatgpt<br>
+        <input type="checkbox" value="Google Gemini"> Google Gemini<br>
+        <input type="checkbox" value="microsoft copilot"> Microsoft Copilot<br>
+        <input type="checkbox" value="Midjourney"> Midjourney<br>
+        <input type="checkbox" value="claude"> Claude(Anthropic)<br>
+        <input type="checkbox" value="jasper ai"> Jasper AI<br>
+        <input type="checkbox" value="replit ai"> Replit AI<br>
+        <input type="checkbox" value="notion ai"> Notion AI<br>
+        <input type="checkbox" value="others"> Others<br>
+      </label>
+      
+      <label>
+        <p>How do you feel AI tools have impacted your productivity?</p>
+        <input type="radio" name="impact" value="greatly" required > Greatly increased productivity<br>
+        <input type="radio" name="impact" value="slightly" > Slightly improved<br>
+        <input type="radio" name="impact" value="no"> No major change<br>
+        <input type="radio" name="impact" value="reduced" > Reduced productivity<br>
+      </label>
+
+      <label for="comments"> What Challenges do you face with AI tools? 
+        <textarea id="comments" placeholder="start typing" rows="5" cols="30"required></textarea>
+      </label>
+
+      <label for="review">Which feature do you want most in an AI tool?
+        <textarea id="review" placeholder="start typing" rows="5" cols="30"required></textarea>
+      </label>
+
+      
+      <label >
+        <p>Would you recommend AI tools to others?</p>
+        <input type="radio" name="radio" value="definitely" required> Definitely<br>
+        <input type="radio" name="radio" value="maybe"> Maybe<br>
+        <input type="radio" name="radio" value="not really" > Not Really<br>
+      </label>
+      <label for="submit">
+        <input type="submit" id="submit">
+      </label>
+    </form>
+  </body>
+</html>
+
+** end of index.html **
